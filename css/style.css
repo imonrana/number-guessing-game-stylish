@@ -1,0 +1,113 @@
+/* common css start here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css end here */
+
+main{
+    height: 100vh;
+    padding-top: 80px;
+}
+main h1{
+    text-align: center;
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    background-clip: text;
+}
+.box_one, .box_two, .box_three, .box_four, .box_five, .box_six{
+    height: 350px;
+    width: 400px;
+    margin: 20px auto;
+    background-color: #f5785c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: -1px 1px 12px 1px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 1px 12px 1px rgba(0,0,0,0.66);
+    box-shadow: -1px 1px 12px 1px rgba(0,0,0,0.66);
+    animation: fadded 4s;
+    display: none;
+    position: relative;
+}
+
+.box_one{
+    align-items: normal;
+}
+
+
+@keyframes fadded {
+    0%{
+        opacity: 0;
+    }
+
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.box_title{
+    align-self: normal;
+}
+h2{
+    color:cornsilk;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3{
+    color: cornsilk;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
+button{
+    background-color: coral;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ef4747;
+}
+
+input{
+    width: 70%;
+    padding: 10px 20px;
+    border: none;
+    outline-color: red;
+}
+
+p{
+    margin-top: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.error {
+    position: absolute;
+    top: 208px;
+    left: 61px;
+    color: #0014ff;
+}
+
+.box_six h2 {
+    margin-top: 105px;
+    font-size: 41px;
+    text-align: center;
+}
